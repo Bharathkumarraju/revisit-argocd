@@ -82,3 +82,4 @@ NAME                                           DESIRED   CURRENT   READY   AGE
 replicaset.apps/simple-deployment-86b67d965c   1         1         1       108s
 bharathkumardasaraju@1.install-argocd$
 
+
