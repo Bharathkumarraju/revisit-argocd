@@ -119,7 +119,7 @@ argocd-ssh-known-hosts-cm       1      86m
 argocd-tls-certs-cm             0      86m
 kube-root-ca.crt                1      86m
 bharathkumardasaraju@1.install-argocd$ kubectl get argocd-cm -n argocd -o yaml
-error: the server doesn't have a resource type "argocd-cm"
+error: the server doesnt have a resource type "argocd-cm"
 bharathkumardasaraju@1.install-argocd$ kubectl get cm argocd-cm -n argocd -o yaml
 apiVersion: v1
 data:
@@ -195,3 +195,13 @@ statefulset.apps/argocd-application-controller   1/1     87m
 NAME                                 STATUS     COMPLETIONS   DURATION   AGE
 job.batch/argocd-redis-secret-init   Complete   1/1           4s         72s
 bharathkumardasaraju@1.install-argocd$
+
+
+bharathkumardasaraju@external$ argocd login argocd.devops4itengineers.com:443
+WARN[0001] Failed to invoke grpc call. Use flag --grpc-web in grpc calls. To avoid this warning message, use flag --grpc-web.
+Username: admin
+Password:
+'admin:login' logged in successfully
+Context 'argocd.devops4itengineers.com:443' updated
+bharathkumardasaraju@external$
+
