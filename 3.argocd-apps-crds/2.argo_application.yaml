@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: canary-demo
+spec:
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: demo
+  project: default
+  source:
+    repoURL: 'https://github.com/kostis-codefresh/summer-of-k8s-app-manifests
+    path: ./
+    targetRevision: HEAD
+
